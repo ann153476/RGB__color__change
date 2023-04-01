@@ -76,8 +76,6 @@ input::-webkit-slider-thumb {
   position: relative;
   margin: auto;
   width: 235px;
-  background-color: red;
-  height: 4px;
 }
 .box span {
   position: absolute;
