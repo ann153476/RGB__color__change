@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RGB</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+  </head>
+  <body>
+    <div class="color__box"></div>
+    <header>
+      <h1>Генератор кольорів</h1>
+      <p>
+        щоб створити новий колір оберіть кількість кольору у відсотках для трьох
+        основних кольорів
+      </p>
+    </header>
+    <div class="box">
+      <div class="red__box">
+        <p>червоний red</p>
+        <div class="sliderValue">
+          <span class="red__span">0%</span>
+        </div>
+        <input id="red__input" type="range" min="0" max="255" value="0" />
+      </div>
+      <div class="green__box">
+        <p>зелений green</p>
+        <div class="sliderValue">
+          <span class="green__span">0%</span>
+        </div>
+        <input id="green__input" type="range" min="0" max="255" value="0" />
+      </div>
+      <div class="blue__box">
+        <p>синій blue</p>
+        <div class="sliderValue">
+          <span class="blue__span">0%</span>
+        </div>
+        <input id="blue__input" type="range" min="0" max="255" value="0" />
+      </div>
+      <div class="transparent__box">
+        <p>прозорість transparent</p>
+        <div class="sliderValue">
+          <span class="transparent__span">0%</span>
+        </div>
+        <input
+          id="transparent__input"
+          type="range"
+          min="0"
+          max="1"
+          step="0.01"
+          value="0"
+        />
+      </div>
+    </div>
+    <div class="code__box">
+      <p class="code"></p>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+html,
+body,
+div {
+  margin: 0;
+  padding: 0;
+}
+h1,
+p {
+  text-align: center;
+}
+/* сбросила стандартніе стили инпута */
+input,
+input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+.box,
+header,
+.code__box {
+  border: 1px solid black;
+  background-color: white;
+  margin: auto;
+  width: 400px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.box {
+  height: 600px;
+}
+header {
+  box-sizing: border-box;
+  height: 200px;
+  padding: 20px;
+  margin: 20px auto;
+}
+.code__box {
+  height: 100px;
+  margin: 20px auto;
+}
+input {
+  border-radius: 20px;
+  height: 20px;
+  border: 1px solid black;
+
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width: 255px;
+}
+input::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+#red__input::-webkit-slider-thumb,
+.red__span::after {
+  background-color: red;
+}
+#green__input::-webkit-slider-thumb,
+.green__span::after {
+  background-color: green;
+}
+
+#blue__input::-webkit-slider-thumb,
+.blue__span::after {
+  background-color: blue;
+}
+#transparent__input::-webkit-slider-thumb,
+.transparent__span::after {
+  background-color: black;
+}
+.sliderValue {
+  position: relative;
+  margin: auto;
+  width: 235px;
+  background-color: red;
+  height: 4px;
+}
+.box span {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: white;
+  font-weight: 400;
+  top: -40px;
+  transform: translateX(-50%);
+  transform-origin: bottom;
+  transition: transform 0.3s ease-in-out;
+}
+.box span::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  border: 1px solid black;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  z-index: -1;
+}
+.red__box {
+  color: red;
+}
+.green__box {
+  color: green;
+}
+.blue__box {
+  color: blue;
+}
+.color__box {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -1;
+  top: 0;
+}
+.box p {
+  margin-bottom: 60px;
+  font-size: 20px;
+}
+body {
+  background-image: url(https://www.meme-arsenal.com/memes/1db95757f09697aa20bb587a22eaf2f8.jpg);
+}
