@@ -18,23 +18,37 @@ inputR.oninput = () => {
   let value = inputR.value;
   spanR.textContent = Math.trunc((value * 100) / inputR.max) + "%";
   spanR.style.left = (value * 100) / inputR.max + "%";
+  spanR.classList.add("show");
 };
-
+inputR.onblur = () => {
+  spanR.classList.remove("show");
+};
 inputG.oninput = () => {
   let value = inputG.value;
   spanG.textContent = Math.trunc((value * 100) / inputG.max) + "%";
   spanG.style.left = (value * 100) / inputG.max + "%";
+  spanG.classList.add("show");
 };
-
+inputG.onblur = () => {
+  spanG.classList.remove("show");
+};
 inputB.oninput = () => {
   let value = inputB.value;
   spanB.textContent = Math.trunc((value * 100) / inputB.max) + "%";
   spanB.style.left = (value * 100) / inputB.max + "%";
+  spanB.classList.add("show");
+};
+inputB.onblur = () => {
+  spanB.classList.remove("show");
 };
 inputT.oninput = () => {
   let value = inputT.value;
   spanT.textContent = Math.trunc((value * 100) / inputT.max) + "%";
   spanT.style.left = (value * 100) / inputT.max + "%";
+  spanT.classList.add("show");
+};
+inputT.onblur = () => {
+  spanT.classList.remove("show");
 };
 function func() {
   codeText.textContent = `rgba(${Number(inputR.value)},${Number(

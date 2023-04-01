@@ -13,6 +13,13 @@ input,
 input::-webkit-slider-thumb {
   -webkit-appearance: none;
 }
+h1 {
+  font-size: 25px;
+  margin: 0;
+}
+header p {
+  margin: 0;
+}
 .box,
 header,
 .code__box {
@@ -27,11 +34,11 @@ header,
   flex-direction: column;
 }
 .box {
-  height: 500px;
+  height: 400px;
 }
 header {
   box-sizing: border-box;
-  height: 200px;
+  height: 100px;
   padding: 20px;
   margin: 20px auto;
 }
@@ -63,7 +70,6 @@ input::-webkit-slider-thumb {
 .green__span::after {
   background-color: green;
 }
-
 #blue__input::-webkit-slider-thumb,
 .blue__span::after {
   background-color: blue;
@@ -86,15 +92,16 @@ input::-webkit-slider-thumb {
   color: white;
   font-weight: 400;
   top: -40px;
-  transform: translateX(-50%);
+  transform: translateX(-50%) scale(0);
   transform-origin: bottom;
   transition: transform 0.3s ease-in-out;
+  z-index: 2;
 }
 .box span::after {
   position: absolute;
   content: "";
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   left: 50%;
   transform: translateX(-50%) rotate(45deg);
   border: 1px solid black;
@@ -102,6 +109,10 @@ input::-webkit-slider-thumb {
   border-top-right-radius: 50%;
   border-bottom-left-radius: 50%;
   z-index: -1;
+}
+span.show {
+  transform: translateX(-50%) scale(1);
+  background-color: red;
 }
 .red__box {
   color: red;
@@ -118,10 +129,6 @@ input::-webkit-slider-thumb {
   height: 100%;
   z-index: -1;
   top: 0;
-}
-.box p {
-  margin-bottom: 60px;
-  font-size: 20px;
 }
 body {
   background-image: url(https://www.meme-arsenal.com/memes/1db95757f09697aa20bb587a22eaf2f8.jpg);
