@@ -14,7 +14,7 @@ input::-webkit-slider-thumb {
   -webkit-appearance: none;
 }
 h1 {
-  font-size: 25px;
+  font-size: 20px;
   margin: 0;
 }
 header p {
@@ -38,7 +38,7 @@ header,
 }
 header {
   box-sizing: border-box;
-  height: 100px;
+  height: 70px;
   padding: 20px;
   margin: 20px auto;
 }
